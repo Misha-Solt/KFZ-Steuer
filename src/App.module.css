@@ -1,0 +1,54 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    background-color: rgb(215, 215, 215);
+    border-radius: 80px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin:  10px 10px 10% 10px;
+}
+.title {
+    color:black;
+    font-size: 46px;
+    text-shadow: 0 2px 4px rgba(248, 95, 0, 0.4);
+    margin-right: 150px;
+    width: 100%;
+    text-align: center;
+}
+.logo{
+    width: 150px;
+    border-radius: 50%;
+}
+.button {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 200px;
+    height: 50px;
+    padding: 12px 20px;
+    background: orange;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: rgb(255, 183, 48);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    background-color: #ff7700; /* Even darker for active/click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

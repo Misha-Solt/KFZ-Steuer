@@ -1,0 +1,60 @@
+.container {
+    max-width: 500px;
+    background: lightgrey;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.inputGroup {
+    margin: 10px 0;
+}
+
+.label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input,
+.select {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.result {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    margin: 20px;
+}
+.button {
+    width: 90%;
+    padding: 12px 20px;
+    background: orange;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: rgb(255, 183, 48);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    background-color: #ff7700; /* Even darker for active/click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
