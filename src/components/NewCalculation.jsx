@@ -12,7 +12,6 @@ function NewCalculation({ registrationDate }) {
 
     useEffect(() => {
         if (registrationDate) {
-            // Extract the year from the registrationDate and set it
             const year = registrationDate.getFullYear()
             setFirstRegistrationYear(year)
         }
@@ -25,11 +24,11 @@ function NewCalculation({ registrationDate }) {
             !co2Emissions ||
             !firstRegistrationYear
         ) {
-            setError('All fields are required')
+            setError('Alle Felder sind obligatorisch')
             return false
         }
         if (engineSize <= 0 || co2Emissions <= 0) {
-            setError('Engine size and CO2 emissions must be more than 0')
+            setError('Hubraum und CO2-Emissionen sollten mehr als 0 % sein')
             return false
         }
         setError('')
@@ -69,7 +68,8 @@ function NewCalculation({ registrationDate }) {
         let co2Allowance
         if (registrationYear <= 2011) {
             co2Allowance = 120
-        } else if (registrationYear >= 2012 && registrationYear <= 2013) {
+        }
+        if (registrationYear >= 2012 && registrationYear <= 2013) {
             co2Allowance = 110
         } else {
             co2Allowance = 95
@@ -125,7 +125,7 @@ function NewCalculation({ registrationDate }) {
             </div>
             <div className={styles.inputGroup}>
                 <label className={styles.label}>
-                    Antriebsart*
+                    Antriebsart
                     <select
                         value={fuelType}
                         onChange={(e) => setFuelType(e.target.value)}

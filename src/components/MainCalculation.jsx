@@ -12,7 +12,7 @@ function MainCalculation() {
 
     const handleProceed = () => {
         if (!registrationDate) {
-            setErrorMessage('Please select a registration date.')
+            setErrorMessage('Bitte wählen Sie ein Registrierungsdatum aus.')
             return
         }
         setShowCalculator(true)
@@ -38,8 +38,8 @@ function MainCalculation() {
                             <DatePicker
                                 selected={registrationDate}
                                 onChange={(date) => setRegistrationDate(date)}
-                                dateFormat="dd/MM/yyyy"
-                                placeholderText="DD/MM/YYYY"
+                                dateFormat="dd.MM.yyyy"
+                                placeholderText="DD.MM.YYYY"
                                 className={styles.input}
                             />
                         </label>

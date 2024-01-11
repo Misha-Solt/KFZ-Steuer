@@ -11,11 +11,11 @@ function OldCalculation() {
 
     const calculateTax = () => {
         if (!engineSize || !emissionClass || !engineType) {
-            setError('All fields are required')
+            setError('Alle Felder sind obligatorisch')
             return
         }
         if (engineSize <= 0) {
-            setError('Please enter a valid engine size greater than 0')
+            setError('Bitte geben Sie eine gültige Motorgröße größer 0 ein.')
             return
         }
 
@@ -36,6 +36,7 @@ function OldCalculation() {
 
     if (showResult) {
         return (
+         
             <div className={styles.container}>
                 <p className={styles.result}>
                     Die Kfz-Steuer für das Fahrzeug beträgt: €{tax.toFixed(2)}
@@ -72,7 +73,7 @@ function OldCalculation() {
                         onChange={(e) => setEngineType(e.target.value)}
                         className={styles.select}
                     >
-                        <option value="">Select Engine Type</option>
+                        <option value="">Motortyp auswählen</option>
                         <option value="petrol">Petrol</option>
                         <option value="diesel">Diesel</option>
                     </select>
@@ -86,8 +87,8 @@ function OldCalculation() {
                         onChange={(e) => setEmissionClass(e.target.value)}
                         className={styles.select}
                     >
-                        <option value="">Select Emission Class</option>
-                        <option value="euro3">Euro 3 or better</option>
+                        <option value="">Emissionsklasse auswählen</option>
+                        <option value="euro3">Euro 3 oder besser</option>
                         <option value="euro2">Euro 2</option>
                         <option value="euro1">Euro 1</option>
                         <option value="euro0">Euro 0</option>
